@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="calculator.png">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="inp">
+            <button class="clear" onclick="clearInput()">Cl</button>
+            <button class="num" onclick="del()">DEL</button>
+            <button class="num" onclick="display('%')">%</button>
+            <button class="num" onclick="display('/')">/</button>
+            <button class="num" onclick="display('7')">7</button>
+            <button class="num" onclick="display('8')">8</button>
+            <button class="num" onclick="display('9')">9</button>
+            <button class="num" onclick="display('*')">*</button>
+            <button class="num" onclick="display('4')">4</button>
+            <button class="num" onclick="display('5')">5</button>
+            <button class="num" onclick="display('6')">6</button>
+            <button class="num" onclick="display('-')">-</button>
+            <button class="num" onclick="display('1')">1</button>
+            <button class="num" onclick="display('2')">2</button>
+            <button class="num" onclick="display('3')">3</button>
+            <button class="num" onclick="display('+')">+</button>
+            <button class="num" onclick="display('.')">.</button>
+            <button class="num" onclick="display('0')">0</button>
+            <button class="num plus" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".container"), {
+
+            max: 15,
+            speed:400,
+            glare:true,
+            "max-glare":0.2,
+        });
+        </script> 
+     
+</body>
+</html>
